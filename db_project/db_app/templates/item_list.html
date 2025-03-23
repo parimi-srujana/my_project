@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>List of Items</title>
+</head>
+<body>
+<h1>Items</h1>
+<ul>
+{% for item in items %}
+<li>{{ item.name }} - {{ item.description }}</li
+    Department of Information Technology
+{% endfor %}
+</ul>
+<a href="{% url 'add_item' %}">Add New Item</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Send Email</title>
+<style>
+.email-form-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+max-width: 500px;
+margin: auto;
+}
+button {
+grid-column: span 2;
+background-color: #007bff;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color:#000b16;
+}
+</style>
+</head>
+<body>
+<h2>Send an Email</h2>
+<form method="post" class="email-form-container">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Send</button>
+</form>
+</body>
+</html>
+mail_app/templates/email_sent.html:
+<html>
+<head>
+<title>Email has been sent</title>
+</head>
+<body>
+<h2>Email Sent Successfully!</h2>
+<p>Your email has been delivered.</p>
+</body>
+</html>
