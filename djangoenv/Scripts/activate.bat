@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\User\Desktop\django1\django_projects\djangoenv
+=======
+set VIRTUAL_ENV=C:\Users\User\Desktop\django_lab\django_projects\djangoenv
+>>>>>>> 06d52ba6 (Initial commit)
 
 if not defined PROMPT set PROMPT=$P$G
 
